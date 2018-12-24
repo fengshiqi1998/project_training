@@ -1,0 +1,17 @@
+page-search {
+    ion-content{
+        background-color:#ece5da!important;
+         .searchbar-md .searchbar-input {
+            font-weight: 400;
+            line-height: 2.5rem;
+            color:rgb(94, 77, 77);
+            background-color: #fff;
+        } 
+    }
+    div{
+        color:rgb(217, 186, 138);
+        float: left;
+        font-size: 16px;
+        margin-left: 2px;
+    }
+}

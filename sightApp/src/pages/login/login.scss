@@ -1,0 +1,69 @@
+page-login {
+    ion-content {
+        background-image: url(../../assets/imgs/login/bg.jpg);
+        background-size: cover;
+        img {
+            height: 12rem;
+            display: block;
+            margin: 2rem auto;
+        }
+        .inputs {
+            display: block;
+            margin: 2.5rem auto;
+            width: 21rem;
+            height: 4rem;
+            border-radius: 8px;
+            border: 0;
+            font-size: 1.6rem;
+            text-indent: 1rem;
+            background-color: #d9e2c7;
+        }
+        .psw {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0 auto;
+            width: 20rem;
+            font-size: 1.5rem;
+            ion-checkbox {
+                width: 1.4rem;
+                height: 1.4rem;
+            }
+            p {
+                padding: 0;
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+                color: #19ad57;
+                font-weight: bold;
+            }
+        }
+        button {
+            display: block;
+            border-radius: 64px;
+            border: 0;
+            margin: 2rem auto;
+            line-height:4rem;
+            padding: 0rem;
+            width: 18rem;
+            height: 4rem;
+            background-color: #12864c;
+            font-size: 1.6rem;
+            color: #ffffff;
+        }
+        .signup {
+            display: block;
+            text-decoration: none;
+            color: #12864c;
+        }
+        ion-row {
+      
+            margin: 8rem auto;
+     
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
