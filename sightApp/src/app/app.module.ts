@@ -19,7 +19,6 @@ import { SignupPage } from '../pages/signup/signup';
 import { SignupmobilePage } from '../pages/signupmobile/signupmobile';
 import { MyPage } from '../pages/my/my';
 import { ShezhiPage } from '../pages/shezhi/shezhi';
-import { TologinPage } from '../pages/tologin/tologin';
 import { WePage } from '../pages/we/we';
 import { FunPage } from '../pages/fun/fun';
 import { HelpPage } from '../pages/help/help';
@@ -30,7 +29,6 @@ import {FanPage } from '../pages/fan/fan';
 import {GuanzhuPage } from '../pages/guanzhu/guanzhu';
 import {UserPage } from '../pages/user/user';
 import {HeadPage } from '../pages/head/head';
-import {HeaddetailPage } from '../pages/headdetail/headdetail';
 import {SignPage } from '../pages/sign/sign';
 import {CollectPage } from '../pages/collect/collect';
 import {WenjiPage } from '../pages/wenji/wenji';
@@ -52,6 +50,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { PwordsPage } from '../pages/pwords/pwords';
 import { PphotoPage } from '../pages/pphoto/pphoto';
 import { PmusicPage } from '../pages/pmusic/pmusic';
+import { CommentPage } from '../pages/comment/comment';
+import { RespondPage} from '../pages/respond/respond';
+import { MyAnthologyPage } from '../pages/my-anthology/my-anthology';
+import { MyCollectionPage } from '../pages/my-collection/my-collection';
+import { MyPicturesPage } from '../pages/my-pictures/my-pictures';
+import { MySongsPage } from '../pages/my-songs/my-songs';
+import { CollectiondetailPage } from '../pages/collectiondetail/collectiondetail';
+import { ReplydetailPage } from '../pages/replydetail/replydetail';
+import { AboutlyricsPage } from '../pages/aboutlyrics/aboutlyrics';
+import { AboutnarrationPage } from '../pages/aboutnarration/aboutnarration';
+import { AboutsceneryPage } from '../pages/aboutscenery/aboutscenery';
+import { AboutstorytellingPage } from '../pages/aboutstorytelling/aboutstorytelling';
+import { AboutappearancePage } from '../pages/aboutappearance/aboutappearance';
 
 @NgModule({
   declarations: [
@@ -67,7 +78,6 @@ import { PmusicPage } from '../pages/pmusic/pmusic';
     TabsPage,
     MyPage,
     ShezhiPage,
-    TologinPage,
     WePage,
     FunPage,
     HelpPage,
@@ -79,8 +89,8 @@ import { PmusicPage } from '../pages/pmusic/pmusic';
     UserPage,
     HeadPage,
     SignPage,
-    HeaddetailPage,
     CollectPage,
+    CollectiondetailPage,
     WenjiPage,
     NewPage,
     ChangepasswordPage,
@@ -100,6 +110,18 @@ import { PmusicPage } from '../pages/pmusic/pmusic';
     LovePage,
     SearchPage,
     DetailPage,
+    CommentPage,
+    RespondPage,
+    ReplydetailPage,
+    MyAnthologyPage,
+    MyCollectionPage,
+    MyPicturesPage,
+    MySongsPage,
+    AboutlyricsPage,
+    AboutnarrationPage,
+    AboutsceneryPage,
+    AboutstorytellingPage,
+    AboutappearancePage
   ],
   imports: [
     BrowserModule,
@@ -125,7 +147,6 @@ import { PmusicPage } from '../pages/pmusic/pmusic';
     TabsPage,
     MyPage,
     ShezhiPage,
-    TologinPage,
     WePage,
     FunPage,
     HelpPage,
@@ -137,8 +158,8 @@ import { PmusicPage } from '../pages/pmusic/pmusic';
     UserPage,
     HeadPage,
     SignPage,
-    HeaddetailPage,
     CollectPage,
+    CollectiondetailPage,
     WenjiPage,
     NewPage,
     ChangepasswordPage,
@@ -158,6 +179,18 @@ import { PmusicPage } from '../pages/pmusic/pmusic';
     LovePage,
     SearchPage,
     DetailPage,
+    CommentPage,
+    RespondPage,
+    ReplydetailPage,
+    MyAnthologyPage,
+    MyCollectionPage,
+    MyPicturesPage,
+    MySongsPage,
+    AboutlyricsPage,
+    AboutnarrationPage,
+    AboutsceneryPage,
+    AboutstorytellingPage,
+    AboutappearancePage
   ],
   providers: [
     StatusBar,

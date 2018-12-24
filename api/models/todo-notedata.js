@@ -48,6 +48,17 @@ class TodoNoteData{
       callback(false,results);
     })
   }
+
+  getAnthologyDetail(name, callback){
+    const sql = 'select * from anthology where userid = (select userid from user where username = ?)'
+      db.query(sql, [name], (err,results)=>{
+        if(err){
+          callback(true);
+          return ;
+        }
+        callback(false,results);
+      })
+  }
   //获取文集
   getAnthologyDetail(name, callback){
     const sql = 'select * from anthology where userid = (select userid from user where username = ?)'
