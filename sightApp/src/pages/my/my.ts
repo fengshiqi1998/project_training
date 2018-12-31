@@ -13,8 +13,6 @@ import { ContactPage } from "../contact/contact";
 import { AdvicePage } from "../advice/advice";
 import { MyAnthologyPage } from "../my-anthology/my-anthology";
 import { MyCollectionPage } from "../my-collection/my-collection";
-import { MySongsPage } from "../my-songs/my-songs";
-import { MyPicturesPage } from "../my-pictures/my-pictures";
 /**
  * Generated class for the MyPage page.
  *
@@ -32,6 +30,7 @@ export class MyPage {
   data ={};
   avatar
   userid;
+  autograph;
   constructor(
     public http: HttpClient,
     public storage: Storage,
@@ -60,7 +59,8 @@ export class MyPage {
       that.http.post("/userdata/userdetail",{name:that.username}).subscribe(result => {
         console.log(result);
         that.data = result[0];
-        that.userid = result[0].userid
+        that.userid = result[0].userid;
+        that.autograph = result[0].autograph;
         for(let key in result[0]){
           that.data[key] = result[0][key]
       }
@@ -82,16 +82,16 @@ export class MyPage {
     console.log(this.data)
   }
   goto() {
-    this.navCtrl.push(FanPage);
+    this.navCtrl.push(FanPage,this.userid);
   }
   goTo() {
     this.navCtrl.push(UserPage,this.data);
   }
   goSign() {
-    this.navCtrl.push(SignPage);
+    this.navCtrl.push(SignPage, {userid:this.userid,autograph:this.autograph});
   }
   goGuanzhu() {
-    this.navCtrl.push(GuanzhuPage);
+    this.navCtrl.push(GuanzhuPage,this.userid);
     
   }
   goCollect() {
@@ -111,11 +111,5 @@ export class MyPage {
   }
   goCollection(){
     this.navCtrl.push(MyCollectionPage,this.userid);
-  }
-  goSongs(){
-    this.navCtrl.push(MySongsPage);
-  }
-  goPictures(){
-    this.navCtrl.push(MyPicturesPage);
   }
 }
